@@ -1,0 +1,19 @@
+<h2>Por Capital</h2>
+<hr>
+<div class="row">
+    <div class="col">
+     <app-searchox 
+           placeholder="Buscar por capital"
+           (ondebonce)="seachByCapital($event)"
+           ></app-searchox>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col mt-3">
+            <hr>
+     <app-loadingspiner *ngIf="isloading"></app-loadingspiner>
+        <app-countrytable [countries]="countries"></app-countrytable>
+        </div>
+
+</div>

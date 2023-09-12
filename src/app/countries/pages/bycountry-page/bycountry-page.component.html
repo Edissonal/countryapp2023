@@ -1,0 +1,17 @@
+<h2>Por Pais</h2>
+<hr>
+<div class="row">
+    <div class="col">
+     <app-searchox 
+           placeholder="Buscar por pais"
+           (onValue)="seachByCountry($event)"
+           ></app-searchox>
+    </div>
+</div>
+
+<div class="row">
+        <div class="col mt-3">
+  <app-countrytable [countries]="countries"></app-countrytable>
+        </div>
+
+</div>
